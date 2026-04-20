@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/icons/activity.svg" width="20"/> SUBG-SMS — Subsecretaria de Gestão (Secretaria Municipal de Saúde)
+# <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/activity.svg" width="20"/> SUBG-SMS — Subsecretaria de Gestão (Secretaria Municipal de Saúde)
 
 Bem-vindo à organização oficial de tecnologia da **SUBG-SMS**.
 
@@ -6,7 +6,7 @@ Este espaço centraliza sistemas, APIs e ferramentas responsáveis por apoiar a 
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/icons/target.svg" width="18"/> Objetivo
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/target.svg" width="18"/> Objetivo
 
 A organização **SUBG-SMS** tem como finalidade:
 
@@ -17,7 +17,7 @@ A organização **SUBG-SMS** tem como finalidade:
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/icons/git-branch.svg" width="18"/> Fluxo de Desenvolvimento
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/git-branch.svg" width="18"/> Fluxo de Desenvolvimento
 
 * `main` → produção
 * `develop` → homologação
@@ -26,7 +26,7 @@ A organização **SUBG-SMS** tem como finalidade:
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/icons/check-circle.svg" width="18"/> Qualidade e Testes
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/check-circle.svg" width="18"/> Qualidade e Testes
 
 * Testes automatizados (quando aplicável)
 * Revisão obrigatória via Pull Request
@@ -34,7 +34,7 @@ A organização **SUBG-SMS** tem como finalidade:
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/icons/bar-chart-2.svg" width="18"/> Princípios Técnicos
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/bar-chart-2.svg" width="18"/> Princípios Técnicos
 
 * Alta disponibilidade
 * Resiliência a falhas
@@ -43,7 +43,7 @@ A organização **SUBG-SMS** tem como finalidade:
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/icons/users.svg" width="18"/> Contribuição
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/users.svg" width="18"/> Contribuição
 
 1. Criar branch a partir de `develop`
 2. Seguir padrão de commits
@@ -52,18 +52,18 @@ A organização **SUBG-SMS** tem como finalidade:
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/icons/file-text.svg" width="18"/> Documentação
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/file-text.svg" width="18"/> Documentação
 
 A documentação específica de cada sistema está disponível em seus respectivos repositórios.
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/icons/building.svg" width="18"/> Contexto Institucional
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/home.svg" width="18"/> Contexto Institucional
 
 A SUBG está inserida na estrutura da Secretaria Municipal de Saúde, atuando no suporte à gestão administrativa, auditoria e governança dos serviços de saúde.
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/icons/mail.svg" width="18"/> Contato
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/mail.svg" width="18"/> Contato
 
 Para dúvidas ou acesso aos sistemas, entre em contato com a equipe responsável pela SUBG-SMS.
