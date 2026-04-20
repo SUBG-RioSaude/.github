@@ -1,11 +1,10 @@
-# 👋 Bem-vindo(a) à organização SUBG-RioSaude
+# 👋 Bem-vindo(a) à organização SUBG-SMS
 
 Este repositório centraliza configurações e informações comuns da organização no GitHub.
 
 ## 🚀 Repositórios mais acessados
 
 - [subg-components](https://github.com/SUBG-RioSaude/subg-components) — biblioteca de componentes compartilhados.
-- [front-end-DFD](https://github.com/SUBG-RioSaude/front-end-DFD) — interface web do projeto DFD.
 - [controle-de-metas](https://github.com/SUBG-RioSaude/controle-de-metas) — sistema para acompanhamento de metas.
 
 ## 🔗 Links úteis
