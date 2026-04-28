@@ -1,69 +1,156 @@
-# <svg width="20" viewBox="0 0 24 24" fill="none" stroke="#42b9eb" stroke-width="2" style="vertical-align: middle;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> SUBG-SMS — Subsecretaria de Gestão (Secretaria Municipal de Saúde)
+# SUBG-SMS  
+### Subsecretaria de Gestão — Secretaria Municipal de Saúde
 
-Bem-vindo à organização oficial de tecnologia da **SUBG-SMS**.
-
-Este espaço centraliza sistemas, APIs e ferramentas responsáveis por apoiar a gestão, auditoria e operação da Secretaria Municipal de Saúde.
-
----
-
-## <svg width="18" viewBox="0 0 24 24" fill="none" stroke="#42b9eb" stroke-width="2" style="vertical-align: middle;"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg> Objetivo
-
-A organização **SUBG-SMS** tem como finalidade:
-
-* Garantir transparência e rastreabilidade de processos
-* Apoiar auditorias e tomadas de decisão
-* Padronizar o desenvolvimento de sistemas internos
-* Promover escalabilidade e resiliência dos serviços
+Bem-vindo à organização **SUBG-SMS**.  
+Este repositório central define os **padrões oficiais de desenvolvimento**, garantindo consistência, segurança e escalabilidade em todos os projetos.
 
 ---
 
-## <svg width="18" viewBox="0 0 24 24" fill="none" stroke="#42b9eb" stroke-width="2" style="vertical-align: middle;"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg> Fluxo de Desenvolvimento
+## 📦 Padronização de Repositórios
 
-* `main` → produção
-* `develop` → homologação
-* `feature/*` → novas funcionalidades
-* `fix/*` → correções
+Todos os repositórios devem seguir obrigatoriamente a seguinte convenção de nomenclatura:
 
----
+- `backend-{nome}` → Serviços backend (APIs, workers, etc.)
+- `frontend-{nome}` → Aplicações frontend (web, mobile, etc.)
+- `fullstack-{nome}` → Projetos monorepo (frontend + backend)
 
-## <svg width="18" viewBox="0 0 24 24" fill="none" stroke="#42b9eb" stroke-width="2" style="vertical-align: middle;"><path d="M20 6L9 17l-5-5"/></svg> Qualidade e Testes
-
-* Testes automatizados (quando aplicável)
-* Revisão obrigatória via Pull Request
-* Padronização de commits
+> Exemplo:
+> - `backend-auth`
+> - `frontend-portal`
+> - `fullstack-agendamento`
 
 ---
 
-## <svg width="18" viewBox="0 0 24 24" fill="none" stroke="#42b9eb" stroke-width="2" style="vertical-align: middle;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Princípios Técnicos
+## 🌿 Padrões de Branch
 
-* Alta disponibilidade
-* Resiliência a falhas
-* Performance em operações críticas
-* Código legível e manutenível
+Estrutura obrigatória de branches:
 
----
+- `main` → Produção
+- `develop` → Homologação / staging
+- `feat/*` → Novas funcionalidades
+- `fix/*` → Correções de bugs
+- `hotfix/*` → Correções urgentes em produção
 
-## <svg width="18" viewBox="0 0 24 24" fill="none" stroke="#42b9eb" stroke-width="2" style="vertical-align: middle;"><path d="M17 21v-2a4 4 0 0 0-3-3.87"/><path d="M7 21v-2a4 4 0 0 1 3-3.87"/><circle cx="12" cy="7" r="4"/></svg> Contribuição
-
-1. Criar branch a partir de `develop`
-2. Seguir padrão de commits
-3. Abrir Pull Request
-4. Aguardar revisão
-
----
-
-## <svg width="18" viewBox="0 0 24 24" fill="none" stroke="#42b9eb" stroke-width="2" style="vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Documentação
-
-A documentação específica de cada sistema está disponível em seus respectivos repositórios.
+> Exemplo:
+> - `feat/login-social`
+> - `fix/erro-token-expirado`
+> - `hotfix/falha-pagamento`
 
 ---
 
-## <svg width="18" viewBox="0 0 24 24" fill="none" stroke="#42b9eb" stroke-width="2" style="vertical-align: middle;"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 22V12h6v10"/></svg> Contexto Institucional
+## 📝 Padrões de Commit
 
-A SUBG está inserida na estrutura da Secretaria Municipal de Saúde, atuando no suporte à gestão administrativa, auditoria e governança dos serviços de saúde.
+Utilizamos o padrão **Conventional Commits** para manter histórico organizado e rastreável:
+
+- `feat:` → Nova funcionalidade
+- `fix:` → Correção de bug
+- `hotfix:` → Correção crítica em produção
+- `doc:` → Documentação
+- `ci/cd:` → Alterações em pipelines e automações
+
+> Exemplo:
+> ```
+> feat: adiciona autenticação com JWT
+> fix: corrige validação de CPF
+> doc: atualiza instruções de instalação
+> ```
 
 ---
 
-## <svg width="18" viewBox="0 0 24 24" fill="none" stroke="#42b9eb" stroke-width="2" style="vertical-align: middle;"><path d="M4 4h16v16H4z"/><polyline points="22,6 12,13 2,6"/></svg> Contato
+## 🏗️ Infraestrutura e Containerização
 
-Para dúvidas ou acesso aos sistemas, entre em contato com a equipe responsável pela SUBG-SMS.
+Atualmente, a infraestrutura conta com dois servidores internos:
+
+- **devsubg** → Ambiente de desenvolvimento e testes
+- **subg** → Ambiente de produção
+
+Todos os projetos devem ser preparados para execução em ambiente containerizado (preferencialmente Docker), garantindo:
+
+- Padronização de ambientes
+- Facilidade de deploy
+- Isolamento de dependências
+
+---
+
+## 🧪 Testes e Qualidade
+
+Todos os projetos devem obrigatoriamente conter:
+
+- Testes unitários
+- Cobertura mínima adequada (definida por projeto)
+- Revisão de código via Pull Request
+
+Objetivos:
+
+- Reduzir regressões
+- Aumentar confiabilidade
+- Garantir qualidade do código
+
+---
+
+## ⚙️ Metodologia Ágil
+
+Utilizamos o **Jira** como ferramenta oficial de gestão de tarefas.
+
+Nosso fluxo segue princípios ágeis:
+
+- Todas as demandas devem estar registradas no Jira
+- Cada task deve possuir:
+  - Descrição clara
+  - Critérios de aceitação
+  - Responsável definido
+- O desenvolvimento deve sempre estar vinculado a uma task
+- Commits e Pull Requests devem referenciar o ID da tarefa
+
+> Exemplo:
+> ```
+> feat: implementa cadastro de usuários [SUBG-123]
+> ```
+
+---
+
+## 🤝 Contribuições
+
+Para contribuir com qualquer projeto:
+
+1. Criar uma branch a partir da `develop`
+2. Seguir o padrão de nomenclatura de branches
+3. Realizar commits no padrão definido
+4. Abrir um Pull Request para `develop`
+5. Aguardar revisão obrigatória
+
+> Nenhum código deve ser enviado diretamente para `main`
+
+---
+
+## 📚 Documentação
+
+Todos os projetos, **sem exceção**, devem conter um arquivo `README.md` com:
+
+- Descrição do projeto
+- Tecnologias utilizadas
+- Instruções de execução
+- Variáveis de ambiente
+- Exemplos de uso (quando aplicável)
+
+---
+
+## 🚨 Diretrizes Gerais
+
+- Código limpo e legível é obrigatório
+- Segurança deve ser considerada desde o início
+- Evitar duplicação de código
+- Sempre priorizar performance e escalabilidade
+
+---
+
+## 📌 Considerações Finais
+
+Este documento é **obrigatório** para todos os projetos da organização.  
+O não cumprimento dos padrões pode resultar em bloqueio de merges ou revisões.
+
+---
+
+**SUBG-SMS**  
+Subsecretaria de Gestão  
+Secretaria Municipal de Saúde
